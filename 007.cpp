@@ -3,6 +3,7 @@
 template<typename Int_type>
 auto check_prime(Int_type entry){
   if(entry   == 1) return false;
+  if(entry   == 2) return true;
   if(entry%2 == 0) return false;
 
   for(Int_type i = 3; i < entry; i += 2){
